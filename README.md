@@ -37,7 +37,7 @@ PROJECT_NAME=ds-project-name
 
 ## this repo
 TEMPLATE_NAME=ds-projects-template
-TEMPLATE_REPO=git@github.com:abocci0577/ds-projects-template.git
+TEMPLATE_REPO=git@github.com:scipio1465/ds-projects-template.git
 
 ##
 git clone $TEMPLATE_REPO
@@ -49,7 +49,7 @@ rm -rf .git ## stop here if you don't want the project in git
 ## - First create a new repo (i.e. called with same name of the project) in your GitHub account
 ## - Don't initialize it with a README, .gitignore, or license.
 REPO_NAME=$PROJECT_NAME   # REPO_NAME and PROJECT_NAME can be different
-GITHUB_USER=abocci0577    # your Github username
+GITHUB_USER=scipio1465    # your Github username
 
 git init
 git add .
@@ -110,6 +110,7 @@ Instead to run manually (`pip install -r requirement.txt`), do it within `enviro
 ```bash
     dependencies:
       - <other packages>
+	  - pip
       - pip:
         - -r file:requirement.txt
 ```
@@ -144,7 +145,6 @@ follows.
 
 ## Check if the environment variable is set
 > echo $ENV_PREFIX
-/Users/boccia/work/testgit/ds-projects-template/env
 ```
 
 ### Listing the full contents of the Conda environment
